@@ -1,0 +1,58 @@
+:root {
+    --bg-dark: #000000;
+    --text-light: #FFFFFF;
+    --text-green: #51ff00;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+.mainContainer {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    background-color: var(--bg-dark);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.mainText{
+    display: flex;
+    flex-direction: row;
+}
+.currentOld,
+.current {
+    z-index: 1;
+    color: var(--text-green);
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+
+.courser{
+    z-index: 1;
+    background-color: var(--text-green);
+    width: 10px;
+    height: 18px;
+    margin-left: 5px;
+    margin-top: 5px;
+    transition: 1s;
+    animation: blink .5s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
