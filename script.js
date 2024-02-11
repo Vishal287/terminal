@@ -2,7 +2,7 @@ const body = document.getElementById("body");
 const mainText = document.getElementById("mainText");
 const history = document.getElementById("history");
 const html = `
-<div class="current">$Vishal<spen style="color: white;">@</spen><spen style="color: blue;">ubantu:</spen>  </div>
+<div class="current">$Vishal<spen style="color: white;">@</spen><spen style="color: blue;">ubuntu:</spen>  </div>
 <div class="current" id="text"></div>
 <div class="courser" id="courser"></div>
 `;
@@ -30,7 +30,7 @@ function readCommandText(event) {
 function handleEnterEvent(event) {
     const node = document.createElement('div');
     node.className = 'current';
-    node.innerText = `$Vishal@ubantu: ${commandText}`;
+    node.innerText = `$Vishal@ubuntu: ${commandText}`;
     history.appendChild(node)
     mainText.innerHTML = html;
     commandText = '';
